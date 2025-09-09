@@ -14,6 +14,7 @@ import java.util.List;
 
 public class Student_DAO implements Student_interface {
 
+    // 학생 객체를 받아와 DB에 저장하는 메소드 + 평균, 총점, 학점 계산
     public void insert(Student s) throws SQLException {
         String sql = "INSERT INTO student (sno, name, korean, english, math, science) VALUES (?,?,?,?,?,?)";
 
@@ -42,6 +43,7 @@ public class Student_DAO implements Student_interface {
         }
     }
 
+    //학생 객체를 받아와 원하는 학번의 정보를 수정함
     public void update(Student s) throws SQLException {
         String sql = "UPDATE student SET korean=?, english=?, math=?, science=? WHERE sno=?";
 
@@ -67,6 +69,7 @@ public class Student_DAO implements Student_interface {
         }
     }
 
+    // 학번을 인자로 받아 해당 학번에 해당하는 컬럼 제거
     public void delete(String s_number) throws SQLException {
         String sql = "DELETE FROM student WHERE sno = ?";
 
@@ -87,7 +90,7 @@ public class Student_DAO implements Student_interface {
         }
     }
 
-    //db데이터 정렬 로드
+    //초기, 수정된 DB 상태를 불러오기 위한 Connect, 리스트안에 학생들의 정보를 저장
     public void Connect(List<Student> students) throws SQLException {
         String sql = "SELECT * FROM student";
 
@@ -115,6 +118,7 @@ public class Student_DAO implements Student_interface {
         }
     }
 
+    // 학생 한 명의 정보를 출력하는 메소드 학번을 인자값으로 받아 해당하는 학생의 정보를 출력
     public void select_student(String sno) throws SQLException {
         String sql = "SELECT * FROM student WHERE sno = ?";
 
@@ -137,6 +141,7 @@ public class Student_DAO implements Student_interface {
         }
     }
 
+    // 모든 학생의 정보를 출력하는 메소드
     public void select_All() throws SQLException {
         String sql = "SELECT * FROM student";
 
@@ -144,7 +149,6 @@ public class Student_DAO implements Student_interface {
              PreparedStatement ps = conn.prepareStatement(sql);) {
 
             ResultSet rs = ps.executeQuery();
-
 
             while (rs.next()) {
 
