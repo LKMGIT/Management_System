@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ManagementSystem">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JAVA/lib/json-20250517.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JAVA/lib/lombok-1.18.38.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JAVA/lib/mysql-connector-java-8.0.22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$" />
+    </SOURCES>
+  </library>
+</component>
