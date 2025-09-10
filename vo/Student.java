@@ -25,7 +25,6 @@ public class Student extends Person implements Comparable<Student>{
         return super.getName() + "(총점 =" + total + ", " + "평균 =" + average + ", " + "학점 = " + grade + ")";
     }
 
-    @Override
     public boolean equals(Student o) {
         if(this.s_number.equals(o.getS_number())){
             return true;

@@ -4,7 +4,7 @@
  * <strong>구성 요소:</strong>
  * <ul>
  *     <li>{@link Controller} - 관리 시스템에서 사용할 기본 동작(입력, 수정, 삭제, 검색 등)을 정의하는 인터페이스.</li>
- *     <li>{@link controller.ControllerImpl} - {@code Controller}를 구현하며, 학생, 정규직 직원, 시간제 직원의 데이터를 관리하는 구체적인 기능을 제공합니다.</li>
+ *     <li>{@link controller.student_controller.Student_ControllerImpl} - {@code Controller}를 구현하며, 학생, 정규직 직원, 시간제 직원의 데이터를 관리하는 구체적인 기능을 제공합니다.</li>
  * </ul>
  * </p>
  *

@@ -13,5 +13,4 @@ public abstract class Person {
     private String name;
     private int age;
 
-    public abstract boolean equals(Student o);
 }
