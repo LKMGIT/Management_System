@@ -39,7 +39,7 @@ public class MainMenu {
 
         switch (num) {
             case 1 -> Student_View.student_page();
-           // case 2 -> Fulltime_View.fulltime_page();
+            case 2 -> Fulltime_View.fulltime_page();
            // case 3 -> Parttime_View.parttime_page();
             case 4 -> {
                 System.out.println("프로그램 종료");
